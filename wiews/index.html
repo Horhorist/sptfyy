@@ -1,41 +1,45 @@
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"
-    />
+     <meta charset="UTF-8">
+     <meta name="description" content="Spotify url shortener">
+     <meta name="keywords" content="spotify, url shortener, spotify url shortener">
+     <meta name="author" content="Horhorik">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b735ff7bd6.js" crossorigin="anonymous"></script>    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"/>
+    <linkrel="stylesheet"href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
     <link rel="stylesheet" href="./style.css" />
-    <title>URL Shortener</title>
+    <link rel="icon" href="https://cdn.glitch.global/368b62d4-232d-4775-9d06-f22ac6ebc35c/icon.ico?v=1672511833895" type="image/x-icon" />
+
+    <title>Spotify Url Shortener</title>
   </head>
   <body>
+ 
+<!--logo-->
+    <nav class="nav nav-pills nav-fill">
+      <a class="nav-link" aria-current="page" href="#"><img src="https://i.hizliresim.com/3r7qqkf.png"  class="ml-auto" alt="Sptfyy" width="190" height="190"></a>
+    </nav>
+
+
     <center>
-      <a class="title" href="./" style="text-decoration: none;">
-        <h1>URL Shortener</h1>
+      <a style="text-decoration: none;">
+        <h1 >Spotify URL Shortener</h1>
       </a>
-      <br />
+      <br/>
       <form>
         <div>
-          <input type="url" name="url" placeholder="enter a url" required />
-          <input
-            type="text"
-            name="slug"
-            placeholder="enter a slug"
-            style="margin-top: 10px;"
-          />
+          <input type="url" name="url" placeholder="Your Spotify Url" required />
+          <input type="text" name="slug" placeholder=" Custom Short Url Name" style="margin-top: 10px;"/>
         </div>
         <br />
-        <input type="submit" value="shorten!" />
+        <input type="submit" value="shorten!"/>
       </form>
       <br />
-      <a href="./delete">Delete a Slug</a>
+    <!--link-->  
+      <a href="./delete" class="link-success">Delete a Slug</a>
       <span> | </span>
-      <a href="./stats">Slug Stats</a>
+      <a href="./stats" class="link-success">Slug Stats</a>
       <br />
       <div id="response"></div>
     </center>
