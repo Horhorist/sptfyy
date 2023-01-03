@@ -1,13 +1,13 @@
 {
-  "name": "url-shortener-template",
+  "name": "Spotify-url-shortener",
   "version": "2.0.0",
-  "description": "Simple URL shortener with a JSON database.",
+  "description": "Spotify URL shortener with a JSON database.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
-  "author": "RemiixInc",
-  "license": "MIT",
+  "author": "Horhorik",
+  "license": "Apache2",
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
